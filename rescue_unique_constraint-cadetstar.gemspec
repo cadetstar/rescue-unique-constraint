@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'rescue_unique_constraint/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "rescue_unique_constraint"
+  spec.name          = "rescue_unique_constraint-cadetstar"
   spec.version       = RescueUniqueConstraint::VERSION
-  spec.authors       = ["Tam Dang", "Yan Pritzker"]
-  spec.email         = ["tam.dang@reverb.com","yan@reverb.com"]
+  spec.authors       = ["Tam Dang", "Yan Pritzker", "Michael Madison"]
+  spec.email         = ["tam.dang@reverb.com","yan@reverb.com", "cadetstar@hotmail.com"]
   spec.summary       = %q{Turns ActiveRecord::RecordNotUnique errors into ActiveRecord errors}
-  spec.description   = %q{Rescues unique constraint violations and turns them into ActiveRecord errors}
-  spec.homepage      = "https://github.com/reverbdotcom/rescue_unique_contraint"
+  spec.description   = %q{Fork of https://github.com/reverbdotcom/rescue_unique_contraint. Rescues unique constraint violations and turns them into ActiveRecord errors. The fork adds functionality for including scope as an additional option}
+  spec.homepage      = "https://github.com/cadetstar/rescue_unique_contraint"
   spec.license       = "Apache 2.0"
 
   spec.files         = `git ls-files -z`.split("\x0")
